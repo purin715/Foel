@@ -134,9 +134,9 @@
 }
 :root {
   --swiper-navigation-size: 44px;
-  
+
   --swiper-navigation-color: rgba(0,0,0,0.2);/*var(--swiper-theme-color);*/
-  
+
 }
 .swiper-button-prev,
 .swiper-button-next {
@@ -155,9 +155,7 @@
 }
 
 .swiper-button-prev:hover,
-.swiper-button-next:hover,
-.swiper-button-prev:active,
-.swiper-button-next:active {
+.swiper-button-next:hover {
     transform: scale(1.05);
     color: #fff;
 }
@@ -206,9 +204,9 @@
   display: none;
 }
 :root {
-  
+
  --swiper-pagination-color: #fff; /*var(--swiper-theme-color);*/
-  
+
 }
 .swiper-pagination {
   position: absolute;
