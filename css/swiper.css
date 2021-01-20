@@ -160,7 +160,7 @@
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     color: #fff;
 }
 .swiper-button-prev.swiper-button-disabled,
