@@ -8,47 +8,29 @@ $(document).ready(function() {
         $(this).addClass('on');
     });
 
-    // 스크롤 시 메뉴바 배경 생성
+    // 스크롤 시 메뉴바 배경 생성, lang 컬러 변경
     var ht = $(window).height();
+    var scroll = $(document).scrollTop();
     $(window).scroll(function() {
-        if(matchMedia("screen and (min-width:769px)").matches) {
-            if($(this).scrollTop() >= ht) {
-                $('.hd-bg').css({'opacity':'1'});
-                $('ul#lang li:first-child, ul#lang li a').addClass('on');
-            } else {
-                $('.hd-bg').css({'opacity':'0'});
-                $('ul#lang li:first-child, ul#lang li a').removeClass('on');
-            }
-        } else if (matchMedia("screen and (min-width:481px) and (max-width:768px)").matches) {
-            if($(this).scrollTop() >= ht) {
-                $('.hd-bg').css({'opacity':'1'});
-                $('ul#lang li:first-child, ul#lang li a').addClass('on');
-            } else {
-                $('.hd-bg').css({'opacity':'0'});
-                $('ul#lang li:first-child, ul#lang li a').removeClass('on');
-            }
-        } else if (matchMedia("screen and (max-width:480px)").matches) {
-            if($(this).scrollTop() >= ht) {
-                $('.hd-bg').css({'opacity':'1'});
-                $('ul#lang li:first-child, ul#lang li a').addClass('on');
-            } else {
-                $('.hd-bg').css({'opacity':'0'});
-                $('ul#lang li:first-child, ul#lang li a').removeClass('on');
-            }
+        if($(this).scrollTop() >= ht) {
+            $('ul#lang li:first-child, ul#lang li a').addClass('on');
+            $('.hd-bg').css({'opacity':'1'});
+        } else {
+            $('ul#lang li:first-child, ul#lang li a').removeClass('on');
+            $('.hd-bg').css({'opacity':'0'});
         }
     });
 
-    // 트리거 모양 변경
+    // 트리거 클릭했을때 모양 변경, 메뉴 나오기
     $('.trigger').click(function(){
         $(this).toggleClass('on');
-        $('.hd-bg').toggleClass('on');
-        $('.menu-bg, ul#menu').toggleClass('open');
+        $('ul#menu').toggleClass('open');
     });
 
     // 트리거 메뉴 클릭했을 때
     $('ul#menu li').click(function() {
         $('.trigger').removeClass('on');
-        $('.menu-bg, ul#menu').removeClass('open');
+        $('ul#menu').removeClass('open');
     });
 
     // 상단이동 버튼
