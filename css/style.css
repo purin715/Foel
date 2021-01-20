@@ -19,14 +19,14 @@ article { overflow: hidden; }
 .trigger { display: none; }
 
 /*헤더 배경*/
-header { position: fixed; z-index: 99; }
+header { position: fixed; z-index: 30; }
 .hd-bg { opacity: 0; width: 100vw; height: 80px; overflow: hidden; transition: all 0.3s ease-in-out; }
 .hd-bg>div { width: 100vw; height: 100vh; background: url(../imgs/hd-bg.jpg) no-repeat left top; background-size: cover; }
 /*헤더 로고*/
-header>img { position: absolute; left: 50px; top: 12px; height: 55px; z-index: 999; }
+header>img { position: absolute; left: 50px; top: 12px; height: 55px; z-index: 40; }
 
 /* 메뉴 */
-ul#menu { position: absolute; left: 50%; top: 25px; margin-left: -400px; z-index: 99;}
+ul#menu { position: absolute; left: 50%; top: 25px; margin-left: -400px; z-index: 20;}
 ul#menu li { width: 160px; height: 55px; }
 ul#menu li a { color: #fff; font-size: 20px; font-family: 'Montserrat'; text-align: center; line-height: 50px; }
 ul#menu li:before { content: ''; position: absolute; bottom: 0; width: 0; height: 2px; background: #f1aa13; transition: 0.5s; }
@@ -45,7 +45,7 @@ ul#lang li a.on { color: #aaa; }
     header>img { top: 12.5px; height: 55px; }
 
     /*== 트리거 닫혔을 때 ==*/
-    .trigger { display: block; position: absolute; right: 50px; top: 26.5px; width: 40px; height:27px; cursor: pointer; z-index: 99; }
+    .trigger { display: block; position: absolute; right: 50px; top: 26.5px; width: 40px; height:27px; cursor: pointer; z-index: 20; }
     .line { display: block; position: absolute; left: 0; top: 12px; width: 40px; height: 3px; background: #fff; transition: all 0.3s ease-in; }
     .line:before, .line:after { content: ''; position: absolute; left: 0; width: 100%; height: 100%; background: #fff; transition: all 0.3s ease-in; }
     .line:before { top: -10px; }
@@ -81,7 +81,7 @@ ul#lang li a.on { color: #aaa; }
     header>img { left: 30px; top: 9px; height: 42px; }
 
     /*== 트리거 닫혔을 때 ==*/
-    .trigger { display: block; position: absolute; right: 30px; top: 16.5px; width: 40px; height:27px; cursor: pointer; z-index: 99; }
+    .trigger { display: block; position: absolute; right: 30px; top: 16.5px; width: 40px; height:27px; cursor: pointer; z-index: 20; }
     .line { display: block; position: absolute; left: 0; top: 12px; width: 40px; height: 3px; background: #fff; transition: all 0.3s ease-in; }
     .line:before, .line:after { content: ''; position: absolute; left: 0; width: 100%; height: 100%; background: #fff; transition: all 0.3s ease-in; }
     .line:before { top: -10px; }
@@ -115,7 +115,7 @@ ul#lang li a.on { color: #aaa; }
     header>img { left: 20px; top: 9px; height: 32px; }
 
     /*== 트리거 닫혔을 때 ==*/
-    .trigger { display: block; position: absolute; right: 20px; top: 13.5px; width: 30px; height:23px; cursor: pointer; z-index: 99; }
+    .trigger { display: block; position: absolute; right: 20px; top: 13.5px; width: 30px; height:23px; cursor: pointer; z-index: 20; }
     .line { display: block; position: absolute; left: 0; top: 10px; width: 30px; height: 2px; background: #fff; transition: all 0.3s ease-in; }
     .line:before, .line:after { content: ''; position: absolute; left: 0; width: 100%; height: 100%; background: #fff; transition: all 0.3s ease-in; }
     .line:before { top: -8px; }
@@ -146,7 +146,7 @@ ul#lang li a.on { color: #aaa; }
 
 
 /*===== 상단이동 버튼 =====*/
-.upBtn { display: none; position: fixed; right: 30px; bottom: 30px; width: 50px; height: 50px; cursor: pointer; z-index: 9; }
+.upBtn { display: none; position: fixed; right: 30px; bottom: 30px; width: 50px; height: 50px; cursor: pointer; z-index: 10; }
 @media screen and (max-width:480px) {
     .upBtn { right: 20px; bottom: 20px; width: 35px; height: 35px; }
 }
