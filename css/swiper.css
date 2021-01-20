@@ -152,7 +152,10 @@
   justify-content: center;
   color: var(--swiper-navigation-color, var(--swiper-theme-color));
     transition: 0.1s;
-  outline: none!important;
+}
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+    outline: none!important;
 }
 
 .swiper-button-prev:hover,
