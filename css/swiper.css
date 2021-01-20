@@ -152,10 +152,12 @@
   justify-content: center;
   color: var(--swiper-navigation-color, var(--swiper-theme-color));
     transition: 0.1s;
-  -webkit-tap-highlight-color : transparent;
-  -moz-tap-highlight-color : transparent;
-  -ms-tap-highlight-color : transparent;
-  -o-tap-highlight-color : transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .swiper-button-prev:hover,
