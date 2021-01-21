@@ -620,40 +620,40 @@ footer { position: relative; left: 0; bottom: 0; width: 100vw; height: 700px; ov
 .ft-con .ft-info { position: absolute; right: 0; color: #f0f0f0; font: 20px 'Montserrat'; line-height: 22px; }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
-    footer { height: 800px; }
+    footer { height: 700px; }
     /*푸터 배경*/
     .ft-shape { top: -5650px; }
-    .ft-con { width: 500px; bottom: 12%; height: 250px; margin-left: -250px; }
+    .ft-con { bottom: 8%; width: 510px; height: 230px; margin-left: -255px; }
 
     /*회사 로고*/
-    .ft-con img { left: 50%; width: 180px; margin-left: -90px; }
+    .ft-con img { left: 0; width: 140px; margin-left: 0; }
 
     /*회사 정보*/
-    .ft-con .ft-info { left: 50%; bottom: 10px; width: 510px; margin-left: -255px; font-size: 18px; text-align: center; }
+    .ft-con .ft-info { left: 0; bottom: 0; width: 510px; margin-left: 0; font-size: 18px; line-height: 22px; }
 }
 @media screen and (min-width:481px) and (max-width:768px) {
-    footer { height: 770px; }
+    footer { height: 730px; }
 
     /*푸터 배경*/
     .ft-shape { top: -5650px; }
-    .ft-con { width: 450px; bottom: 12%; height: 230px; margin-left: -225px; }
+    .ft-con { bottom: 8%; width: 330px; height: 250px; margin-left: -165px; }
 
     /*회사 로고*/
-    .ft-con img { left: 50%; width: 160px; margin-left: -80px; }
+    .ft-con img { left: 0; width: 140px; margin-left: 0; }
 
     /*회사 정보*/
-    .ft-con .ft-info { left: 50%; bottom: 0; width: 510px; margin-left: -255px; font-size: 16px; text-align: center; }
+    .ft-con .ft-info { left:0%; bottom: 0; width: 330px; margin-left: 0; font-size: 16px; line-height: 22px; }
 }
 @media screen and (max-width:480px) {
-    footer { height: 770px; }
+    footer { height: 700px; }
 
     /*푸터 배경*/
     .ft-shape { top: -5600px; }
-    .ft-con { width: 450px; bottom: 12%; height: 200px; margin-left: -225px; }
+    .ft-con { bottom: 7%; width: 250px; height: 200px; margin-left: -125px; }
 
     /*회사 로고*/
-    .ft-con img { left: 50%; width: 130px; margin-left: -65px; }
+    .ft-con img { left: 0; width: 100px; margin-left: 0; }
 
     /*회사 정보*/
-    .ft-con .ft-info { left: 50%; bottom: 0; width: 250px; margin-left: -125px; font-size: 12px; line-height: 16px; text-align: center; }
+    .ft-con .ft-info { left: 0; bottom: 0; width: 250px; margin-left: 0; font-size: 12px; line-height: 18px; }
 }
