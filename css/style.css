@@ -623,7 +623,7 @@ footer { position: relative; left: 0; bottom: 0; width: 100vw; height: 700px; ov
     footer { height: 700px; }
     /*푸터 배경*/
     .ft-shape { top: -5650px; }
-    .ft-con { bottom: 8%; width: 510px; height: 230px; margin-left: -255px; }
+    .ft-con { bottom: 9%; width: 510px; height: 220px; margin-left: -255px; }
 
     /*회사 로고*/
     .ft-con img { left: 0; width: 140px; margin-left: 0; }
