@@ -21,7 +21,7 @@ article { overflow: hidden; }
 /*헤더 배경*/
 header { position: fixed; z-index: 30; }
 .hd-bg { opacity: 0; width: 100vw; height: 80px; overflow: hidden; transition: all 0.3s ease-in-out; }
-.hd-bg>div { width: 100vw; height: 100vh; background: url(../imgs/hd-bg.jpg) no-repeat left top; background-size: cover; }
+.hd-bg>div { width: 100vw; height: 100vh; background: url(../imgs/hd-bg.jpg) no-repeat left top; background-size: cover; opacity: 0.95; }
 /*헤더 로고*/
 header>img { position: absolute; left: 50px; top: 12px; height: 55px; z-index: 40; }
 
@@ -61,11 +61,11 @@ ul#lang li a.on { color: #aaa; }
     /*메뉴바 배경*/
     .hd-bg.on { opacity: 1; }
     /* 메뉴 */
-    ul#menu { left: 0; top: 0; width: 100vw; height: 100vh; background: url(../imgs/hd-bg.jpg) no-repeat left top; background-size: cover; margin-left: 0; padding-top: 200px; visibility: hidden; }
+    ul#menu { left: 0; top: 0; width: 100vw; height: 100vh; background: url(../imgs/hd-bg.jpg) no-repeat left top; background-size: cover; margin-left: 0; padding-top: 200px; visibility: hidden; overflow-y: }
     ul#menu li { float: none; width: 100%; height: 120px; }
     ul#menu li.close { display: none; }
     ul#menu li a { font-size: 40px; font-weight: 500; line-height: 120px; }
-    ul#menu.open { padding-top: 180px; visibility: visible; transition: all 0.5s ease-in; }
+    ul#menu.open { padding-top: 180px; visibility: visible; transition: all 0.5s ease-in; overflow-y: hidden; }
     ul#menu li::before { display: none; }
     /* 언어 탭 */
     ul#lang { position: absolute; right: 40px; top: 90px; }
@@ -99,7 +99,7 @@ ul#lang li a.on { color: #aaa; }
     ul#menu { left: 0; top: 0; width: 100vw; height: 100vh; background: url(../imgs/hd-bg.jpg) no-repeat left top; background-size: cover; margin-left: 0; padding-top: 200px; visibility: hidden; }
     ul#menu li { float: none; width: 100%; height: 100px; }
     ul#menu li a { font-size: 34px; font-weight: 500; line-height: 120px; }
-    ul#menu.open { padding-top: 180px; visibility: visible; transition: all 0.5s ease-in; }
+    ul#menu.open { padding-top: 180px; visibility: visible; transition: all 0.5s ease-in; overflow-y: hidden; }
     ul#menu li::before { display: none; }
     /* 언어 탭 */
     ul#lang { position: absolute; right: 20px; top: 70px; }
@@ -133,7 +133,7 @@ ul#lang li a.on { color: #aaa; }
     ul#menu { left: 0; top: 0; width: 100vw; height: 100vh; background: url(../imgs/hd-bg.jpg) no-repeat left top; background-size: cover; margin-left: 0; padding-top: 120px; visibility: hidden; }
     ul#menu li { float: none; width: 100%; height: 70px; }
     ul#menu li a { font-size: 24px; font-weight: 500; line-height: 70px; }
-    ul#menu.open { padding-top: 100px; visibility: visible; transition: all 0.5s ease-in; }
+    ul#menu.open { padding-top: 100px; visibility: visible; transition: all 0.5s ease-in; overflow-y: hidden; }
     ul#menu li::before { display: none; }
     /* 언어 탭 */
     ul#lang { position: absolute; right: 10px; top: 60px; }
