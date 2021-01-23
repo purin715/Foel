@@ -20,7 +20,7 @@ article { overflow: hidden; }
 
 /*헤더 배경*/
 header { position: fixed; z-index: 30; }
-.hd-bg { opacity: 0; width: 100vw; height: 80px; overflow: hidden; transition: all 0.3s ease-in-out; box-shadow: 1px 0 20px rgba(0,0,0,0.5); }
+.hd-bg { opacity: 0; width: 100vw; height: 80px; overflow: hidden; transition: all 0.3s ease-in-out; box-shadow: 1px 0 10px rgba(0,0,0,0.3);  }
 .hd-bg>div { width: 100vw; height: 100vh; background: url(../imgs/hd-bg.jpg) no-repeat left top; background-size: cover; opacity: 0.95; }
 /*헤더 로고*/
 header>img { position: absolute; left: 50px; top: 12px; height: 55px; z-index: 40; }
