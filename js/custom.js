@@ -69,6 +69,17 @@ $(document).ready(function() {
 
     // 연혁 클릭했을 때
     $('.ab-item, .ab-click').click(function() {
-        $('.item-20, .item-19, .c-line, .dot, .ab-txt, .flag, .frontbox').toggleClass('on');
+        $('.item-20, .item-19, .c-line, .dot, .ab-mon, .ab-info, .flag, .frontbox').toggleClass('on');
     });
+
+    // 이미지 변경
+    var tmpDate = new Date();
+    $(".itemImg").attr("src", "/imgs/slide1.jpg?"+tmeDate.getTime());
+    $(".itemImg").attr("src", "/imgs/slide2.jpg?"+tmeDate.getTime());
+    $(".itemImg").attr("src", "/imgs/slide3.jpg?"+tmeDate.getTime());
+
+    $(".itemImg").attr("src", "/imgs/ceo.jpg?"+tmeDate.getTime());
+    $(".itemImg").attr("src", "/imgs/cto.jpg?"+tmeDate.getTime());
+    $(".itemImg").attr("src", "/imgs/Staff1.jpg?"+tmeDate.getTime());
+    $(".itemImg").attr("src", "/imgs/Staff2.jpg?"+tmeDate.getTime());
 });
