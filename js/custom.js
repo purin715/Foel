@@ -8,6 +8,20 @@ $(document).ready(function() {
         $(this).addClass('on');
     });
 
+    // 첫 페이지 언어 : 영어로 설정
+    $('.th-kor, .ab-kor, .tm-kor, .md-kor').hide();
+
+    // 언어 전환
+    $('ul#lang li a').removeAttr("href");
+    $('ul#lang li:first-child').click(function() {
+      $('.th-kor, .ab-kor, .tm-kor, .md-kor').css({'display':'block'});
+      $('.th-eng, .ab-eng, .tm-eng, .md-eng').css({'display':'none'});
+    });
+    $('ul#lang li:last-child').click(function() {
+      $('.th-kor, .ab-kor, .tm-kor, .md-kor').css({'display':'none'});
+      $('.th-eng, .ab-eng, .tm-eng, .md-eng').css({'display':'block'});
+    });
+
     // 스크롤 시 메뉴바 배경 생성, lang 컬러 변경
     var ht = $(window).height();
     var scroll = $(document).scrollTop();
@@ -72,14 +86,37 @@ $(document).ready(function() {
         $('.item-20, .item-19, .c-line, .dot, .ab-mon, .ab-info, .flag, .frontbox').toggleClass('on');
     });
 
-    // 이미지 변경
+    /* ===== 이미지 변경 ===== */
     var tmpDate = new Date();
+    // 헤더 관련 이미지
+    $(".itemImg").attr("src", "/imgs/favicon.png?"+tmeDate.getTime());
+    $(".itemImg").attr("src", "/imgs/hd-bg.jpg?"+tmeDate.getTime());
+    $(".itemImg").attr("src", "/imgs/logo-white.png?"+tmeDate.getTime());
+    $(".itemImg").attr("src", "/imgs/up.png?"+tmeDate.getTime());
+
+    // 슬라이드 이미지
     $(".itemImg").attr("src", "/imgs/slide1.jpg?"+tmeDate.getTime());
     $(".itemImg").attr("src", "/imgs/slide2.jpg?"+tmeDate.getTime());
     $(".itemImg").attr("src", "/imgs/slide3.jpg?"+tmeDate.getTime());
 
+    // TECHNOLOGY 이미지
+    $(".itemImg").attr("src", "/imgs/tech1.jpeg?"+tmeDate.getTime());
+    $(".itemImg").attr("src", "/imgs/tech2.jpeg?"+tmeDate.getTime());
+    $(".itemImg").attr("src", "/imgs/tech3.jpeg?"+tmeDate.getTime());
+
+    // TEAM 이미지
     $(".itemImg").attr("src", "/imgs/ceo.jpg?"+tmeDate.getTime());
     $(".itemImg").attr("src", "/imgs/cto.jpg?"+tmeDate.getTime());
     $(".itemImg").attr("src", "/imgs/Staff1.jpg?"+tmeDate.getTime());
     $(".itemImg").attr("src", "/imgs/Staff2.jpg?"+tmeDate.getTime());
+
+    // MEDIA 이미지
+    $(".itemImg").attr("src", "/imgs/media1.jpg?"+tmeDate.getTime());
+    $(".itemImg").attr("src", "/imgs/media2.jpg?"+tmeDate.getTime());
+    $(".itemImg").attr("src", "/imgs/media3.jpg?"+tmeDate.getTime());
+    $(".itemImg").attr("src", "/imgs/media4.jpg?"+tmeDate.getTime());
+    $(".itemImg").attr("src", "/imgs/media5.jpg?"+tmeDate.getTime());
+
+    // 푸터 관련 이미지
+    $(".itemImg").attr("src", "/imgs/ft-bg.jpg?"+tmeDate.getTime());
 });
