@@ -175,7 +175,7 @@ h1 { padding: 200px 0 60px 0; font: 700 38px 'Montserrat'; text-align: center; }
 /*슬라이드 블릿*/
 .swiper-pagination-bullet {
     position: relative; bottom: 20px; width: 12px!important; height: 12px!important; background: transparent!important;
-    margin: 0 12px!important; border-radius: 100%!important; border: 2px solid #fff!important;
+    margin: 0 12px!important; border-radius: 100%!important; border: 1px solid #fff!important; opacity: 1!important;
 }
 .swiper-pagination-bullet:focus { outline: none!important; }
 .swiper-pagination-bullet-active { background: #fff!important; }
