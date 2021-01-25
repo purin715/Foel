@@ -135,7 +135,7 @@
 :root {
   --swiper-navigation-size: 44px;
 
-  --swiper-navigation-color: rgba(255,255,255,0.3);/*var(--swiper-theme-color);*/
+  --swiper-navigation-color: #fff;/*var(--swiper-theme-color);*/
 
 }
 .swiper-button-prev,
