@@ -9,17 +9,17 @@ $(document).ready(function() {
     });
 
     // 첫 페이지 언어 : 영어로 설정
-    $('.th-kor, .ab-kor, .tm-kor, .md-kor').hide();
+    $('.kor').hide();
 
     // 언어 전환
     $('ul#lang li a').removeAttr("href");
     $('ul#lang li:first-child').click(function() {
-      $('.th-kor, .ab-kor, .tm-kor, .md-kor').css({'display':'block'});
-      $('.th-eng, .ab-eng, .tm-eng, .md-eng').css({'display':'none'});
+      $('.kor').css({'display':'block'});
+      $('.eng').css({'display':'none'});
     });
     $('ul#lang li:last-child').click(function() {
-      $('.th-kor, .ab-kor, .tm-kor, .md-kor').css({'display':'none'});
-      $('.th-eng, .ab-eng, .tm-eng, .md-eng').css({'display':'block'});
+      $('.kor').css({'display':'none'});
+      $('.eng').css({'display':'block'});
     });
 
     // 스크롤 시 메뉴바 배경 생성, lang 컬러 변경

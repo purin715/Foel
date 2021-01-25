@@ -203,13 +203,13 @@ ul#th-grid li>img { width: 300px; height: 420px; margin-bottom: 20px; }
 /* technology 텍스트 */
 ul#th-grid li .th-txt { width: 320px; }
 ul#th-grid li .th-txt>h3 { margin-bottom: 10px; font: 500 24px 'Montserrat'; }
-ul#th-grid li .th-txt>h3.th-kor { font: 500 24px 'Noto Sans KR'; }
+ul#th-grid li .th-txt>h3.kor { font: 500 24px 'Noto Sans KR'; }
 ul#th-grid li .th-txt>p {
   width: 320px; height: 3.8em; overflow: hidden;
   line-height: 1.2em; word-wrap: break-word; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
   font: 14px 'Montserrat'; color: #666;
 }
-ul#th-grid li .th-txt>p.th-kor { font: 500 14px 'Noto Sans KR'; }
+ul#th-grid li .th-txt>p.kor { font: 500 14px 'Noto Sans KR'; }
 
 /*PDF 버튼*/
 .th-pdf {
@@ -501,6 +501,9 @@ ul#th-grid li .th-txt>p.th-kor { font: 500 14px 'Noto Sans KR'; }
     font: 600 26px 'Noto Sans KR'; color: #fff; text-align: center; line-height: 70px; transition: 0.3s;
 }
 .tm-item:nth-child(1) .mb-name, .tm-item:nth-child(2) .mb-name { width: 200px; margin-left: -100px; }
+/* 팀원 이름-영문*/
+.mb-name.eng { width: 350px; margin-left: -175px; }
+.tm-item:nth-child(1) .mb-name.eng, .tm-item:nth-child(2) .mb-name.eng { width: 300px; margin-left: -150px; }
 
 /*팀원 경력*/
 .mb-info {
@@ -509,6 +512,9 @@ ul#th-grid li .th-txt>p.th-kor { font: 500 14px 'Noto Sans KR'; }
   font: 16px 'Noto Sans KR'; color: #fff;
 }
 .tm-item:nth-child(3) .mb-info, .tm-item:nth-child(4) .mb-info { left: 55px; }
+/* 팀원 경력-영문*/
+.mb-info.eng { left: 35px; }
+.tm-item:nth-child(3) .mb-info.eng, .tm-item:nth-child(4) .mb-info.eng { left: 10px; }
 
 @media screen and (min-width:769px) and (max-width:1100px) {
     /*팀 배경*/
@@ -524,10 +530,16 @@ ul#th-grid li .th-txt>p.th-kor { font: 500 14px 'Noto Sans KR'; }
     /*팀원 이름*/
     .mb-name { width: 230px; height: 55px; font-size: 24px; line-height: 55px; margin: 10px 0 20px -115px; }
     .tm-item:nth-child(1) .mb-name, .tm-item:nth-child(2) .mb-name { width: 180px; margin-left: -90px; }
+    /* 팀원 이름-영문*/
+    .mb-name.eng { width: 330px; margin-left: -165px; }
+    .tm-item:nth-child(1) .mb-name.eng, .tm-item:nth-child(2) .mb-name.eng { width: 260px; margin-left: -130px; }
 
     /*팀원 경력*/
     .mb-info { width: 280px; height: 9em; left: 60px; font-size: 14px; }
     .tm-item:nth-child(3) .mb-info, .tm-item:nth-child(4) .mb-info { left: 35px; }
+    /* 팀원 경력-영문*/
+    .mb-info.eng { left: 30px; }
+    .tm-item:nth-child(3) .mb-info.eng, .tm-item:nth-child(4) .mb-info.eng { left: 0; }
 }
 @media screen and (min-width:481px) and (max-width:768px) {
     /* 팀 배경*/
@@ -543,10 +555,16 @@ ul#th-grid li .th-txt>p.th-kor { font: 500 14px 'Noto Sans KR'; }
     /*팀원 이름*/
     .mb-name { width: 220px; height: 50px; font-size: 23px; line-height: 50px; margin: 10px 0 20px -110px; }
     .tm-item:nth-child(1) .mb-name, .tm-item:nth-child(2) .mb-name { width: 170px; margin-left: -85px; }
+    /* 팀원 이름-영문*/
+    .mb-name.eng { width: 330px; margin-left: -165px; }
+    .tm-item:nth-child(1) .mb-name.eng, .tm-item:nth-child(2) .mb-name.eng { width: 260px; margin-left: -130px; }
 
     /*팀원 경력*/
     .mb-info { width: 260px; left: 40px; font-size: 13px; }
     .tm-item:nth-child(3) .mb-info, .tm-item:nth-child(4) .mb-info { left: 25px; }
+    /* 팀원 경력-영문*/
+    .mb-info.eng { left: 0px; }
+    .tm-item:nth-child(3) .mb-info.eng, .tm-item:nth-child(4) .mb-info.eng { left: -20px; }
 }
 @media screen and (max-width:480px) {
     /*팀 배경*/
@@ -562,10 +580,16 @@ ul#th-grid li .th-txt>p.th-kor { font: 500 14px 'Noto Sans KR'; }
     /*팀원 이름*/
     .mb-name { width: 180px; height: 45px; font-size: 18px; line-height: 45px; margin: 10px 0 20px -90px; }
     .tm-item:nth-child(1) .mb-name, .tm-item:nth-child(2) .mb-name { width: 150px; margin-left: -75px; }
+    /* 팀원 이름-영문*/
+    .mb-name.eng { width: 240px; margin-left: -120px; }
+    .tm-item:nth-child(1) .mb-name.eng, .tm-item:nth-child(2) .mb-name.eng { width: 210px; margin-left: -105px; }
 
     /*팀원 경력*/
     .mb-info { width: 200px; left: 30px; font-size: 10px; }
     .tm-item:nth-child(3) .mb-info, .tm-item:nth-child(4) .mb-info { left: 15px; }
+    /* 팀원 경력-영문*/
+    .mb-info.eng { left: 0; }
+    .tm-item:nth-child(3) .mb-info.eng, .tm-item:nth-child(4) .mb-info.eng { left: -10px; }
 }
 
 
@@ -633,7 +657,8 @@ footer { position: relative; left: 0; bottom: 0; width: 100vw; height: 700px; ov
 .ft-con img { position: absolute; left: 0; top: 30px; width: 230px; }
 
 /*회사 정보*/
-.ft-con .ft-info { position: absolute; right: 0; color: #f0f0f0; font: 20px 'Montserrat'; line-height: 28px; }
+.ft-con .ft-info { position: absolute; right: 0; width: 560px; height: 170px; color: #f0f0f0; font: 20px 'Montserrat'; line-height: 28px; }
+.ft-con .ft-info.kor { font: 20px 'Noto Sans KR'; line-height: 28px; }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
     footer { height: 700px; }
@@ -645,7 +670,7 @@ footer { position: relative; left: 0; bottom: 0; width: 100vw; height: 700px; ov
     .ft-con img { left: 0; top: 0; width: 130px; margin-left: 0; }
 
     /*회사 정보*/
-    .ft-con .ft-info { left: 0; bottom: 0; width: 510px; margin-left: 0; font-size: 16px; line-height: 24px; }
+    .ft-con .ft-info { left: 0; bottom: 0; width: 450px; height: 145px; margin-left: 0; font-size: 16px; line-height: 24px; }
 }
 @media screen and (min-width:481px) and (max-width:768px) {
     footer { height: 730px; }
@@ -658,7 +683,7 @@ footer { position: relative; left: 0; bottom: 0; width: 100vw; height: 700px; ov
     .ft-con img { left: 0; top: 0; width: 120px; margin-left: 0; }
 
     /*회사 정보*/
-    .ft-con .ft-info { left:0%; bottom: 0; width: 330px; margin-left: 0; font-size: 15px; line-height: 22px; }
+    .ft-con .ft-info { left:0%; bottom: 0; width: 330px; height: 155px; margin-left: 0; font-size: 15px; line-height: 22px; }
 }
 @media screen and (max-width:480px) {
     footer { height: 700px; }
@@ -671,5 +696,5 @@ footer { position: relative; left: 0; bottom: 0; width: 100vw; height: 700px; ov
     .ft-con img { left: 0; top: 0; width: 80px; margin-left: 0; }
 
     /*회사 정보*/
-    .ft-con .ft-info { left: 0; bottom: 0; width: 250px; margin-left: 0; font-size: 12px; line-height: 18px; }
+    .ft-con .ft-info { left: 0; bottom: 0; width: 250px; height: 125px; margin-left: 0; font-size: 12px; line-height: 18px; }
 }
