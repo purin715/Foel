@@ -37,7 +37,7 @@ $(document).ready(function() {
 
     // 트리거 클릭했을때 모양 변경, 메뉴 나오기
     $('.trigger').click(function(){
-        $(this).toggleClass('on');
+        $('.trigger').toggleClass('on');
         $('ul#menu').toggleClass('open');
     });
 
