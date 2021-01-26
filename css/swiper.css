@@ -135,7 +135,7 @@
 :root {
   --swiper-navigation-size: 44px;
 
-  --swiper-navigation-color: #fff;/*var(--swiper-theme-color);*/
+  --swiper-navigation-color: rgba(255,255,255,0.3);/*var(--swiper-theme-color);*/
 
 }
 .swiper-button-prev,
@@ -160,8 +160,8 @@
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-    transform: scale(1.03);
-    color: #fff;
+    transform: scale(1.02);
+    color: rgba(255,255,255,0.7);
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
