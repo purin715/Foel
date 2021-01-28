@@ -352,7 +352,7 @@ table { margin: 0 auto; }
     .tm-item:nth-child(1) .mb-name, .tm-item:nth-child(2) .mb-name { width: 180px; margin-left: -90px; }
 
     /*팀원 경력*/
-    .mb-info { width: 280px; height: 8.6em; left: 60px; font-size: 14px; }
+    .mb-info { width: 280px; height: 9.2em; left: 60px; font-size: 14px; }
     .tm-item:nth-child(3) .mb-info, .tm-item:nth-child(4) .mb-info { left: 35px; }
 }
 @media screen and (min-width:481px) and (max-width:768px) {
@@ -371,7 +371,7 @@ table { margin: 0 auto; }
     .tm-item:nth-child(1) .mb-name, .tm-item:nth-child(2) .mb-name { width: 170px; margin-left: -85px; }
 
     /*팀원 경력*/
-    .mb-info { width: 260px; height: 8.6em; left: 40px; font-size: 13px; }
+    .mb-info { width: 260px; height: 9.2em; left: 40px; font-size: 13px; }
     .tm-item:nth-child(3) .mb-info, .tm-item:nth-child(4) .mb-info { left: 25px; }
 }
 @media screen and (max-width:480px) {
@@ -390,7 +390,7 @@ table { margin: 0 auto; }
     .tm-item:nth-child(1) .mb-name, .tm-item:nth-child(2) .mb-name { width: 150px; margin-left: -75px; }
 
     /*팀원 경력*/
-    .mb-info { width: 200px; left: 30px; font-size: 10px; }
+    .mb-info { width: 200px; height: 9.4em; left: 30px; font-size: 10px; }
     .tm-item:nth-child(3) .mb-info, .tm-item:nth-child(4) .mb-info { left: 15px; }
 }
 
