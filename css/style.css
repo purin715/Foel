@@ -209,7 +209,7 @@ ul#th-grid li .th-txt>p {
 
     /* technology 텍스트 */
     ul#th-grid li .th-txt>h3 { width: 215px; font-size: 20px; }
-    ul#th-grid li .th-txt>p { width: 215px; height: 5em; -webkit-line-clamp: 4; font-size: 12px; }
+    ul#th-grid li .th-txt>p { width: 215px; height: 5.2em; -webkit-line-clamp: 4; font-size: 12px; }
 
     /*PDF 버튼*/
     .th-pdf {
@@ -225,7 +225,7 @@ ul#th-grid li .th-txt>p {
 
     /* technology 텍스트 */
     ul#th-grid li .th-txt>h3 { width: 215px; font-size: 20px; }
-    ul#th-grid li .th-txt>p { width: 215px; height: 5em; -webkit-line-clamp: 4; font-size: 12px; }
+    ul#th-grid li .th-txt>p { width: 215px; height: 5.2em; -webkit-line-clamp: 4; font-size: 12px; }
 
     /*PDF 버튼*/
     .th-pdf {
@@ -241,7 +241,7 @@ ul#th-grid li .th-txt>p {
 
     /* technology 텍스트 */
     ul#th-grid li .th-txt>h3 { width: 210px; font-size: 18px; }
-    ul#th-grid li .th-txt>p { width: 210px; height: 5em; -webkit-line-clamp: 4; font-size: 11px; }
+    ul#th-grid li .th-txt>p { width: 210px; height: 5.2em; -webkit-line-clamp: 4; font-size: 11px; }
 
     /*PDF 버튼*/
     .th-pdf {
