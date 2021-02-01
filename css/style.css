@@ -20,7 +20,7 @@ article { overflow: hidden; }
 /*헤더 배경*/
 header { position: fixed; z-index: 30; }
 .hd-bg { opacity: 0; width: 100vw; height: 80px; overflow: hidden; transition: all 0.3s ease-in-out; box-shadow: 1px 0 10px rgba(0,0,0,0.3);  }
-.hd-bg>div { width: 100vw; height: 100vh; background: url(../imgs/hd-bg.jpg) no-repeat left top; background-size: cover; opacity: 0.95; }
+.hd-bg>div { width: 100vw; height: 100vh; background: url(../imgs/hd-bg2.png) no-repeat left top; /*background: #183a51;*/ background-size: cover; opacity: 0.97; }
 /*헤더 로고*/
 header>img { position: absolute; left: 50px; top: 12px; height: 55px; z-index: 40; }
 
@@ -41,7 +41,7 @@ header>img { position: absolute; left: 50px; top: 12px; height: 55px; z-index: 4
 /*메뉴바 배경*/
 .hd-bg.on { opacity: 1; }
 /* 메뉴 */
-ul#menu { position: absolute; left: 0; top: 0; width: 100vw; height: 100vh; background: url(../imgs/hd-bg.jpg) no-repeat left top; background-size: cover; margin-left: 0; padding-top: 200px; visibility: hidden; }
+ul#menu { position: absolute; left: 0; top: 0; width: 100vw; height: 100vh; background: url(../imgs/hd-bg2.png) no-repeat left top; background-size: cover; margin-left: 0; padding-top: 200px; visibility: hidden; }
 ul#menu li { float: none; width: 100%; height: 120px; }
 ul#menu li.close { display: none; }
 ul#menu li a { font-size: 40px; font-weight: 500; font-family: 'Montserrat'; text-align: center; line-height: 120px; color: #fff; }
@@ -70,7 +70,7 @@ ul#menu li::before { display: none; }
     /*메뉴바 배경*/
     .hd-bg.on { opacity: 1; }
     /* 메뉴 */
-    ul#menu { left: 0; top: 0; width: 100vw; height: 100vh; background: url(../imgs/hd-bg.jpg) no-repeat left top; background-size: cover; margin-left: 0; padding-top: 200px; visibility: hidden; }
+    ul#menu { left: 0; top: 0; width: 100vw; height: 100vh; background: url(../imgs/hd-bg2.png) no-repeat left top; background-size: cover; margin-left: 0; padding-top: 200px; visibility: hidden; }
     ul#menu li { float: none; width: 100%; height: 120px; }
     ul#menu li.close { display: none; }
     ul#menu li a { font-size: 40px; font-weight: 500; line-height: 120px; }
@@ -105,7 +105,7 @@ ul#menu li::before { display: none; }
     /*메뉴바 배경*/
     .hd-bg.on { opacity: 1; }
     /* 메뉴 */
-    ul#menu { left: 0; top: 0; width: 100vw; height: 100vh; background: url(../imgs/hd-bg.jpg) no-repeat left top; background-size: cover; margin-left: 0; padding-top: 200px; visibility: hidden; }
+    ul#menu { left: 0; top: 0; width: 100vw; height: 100vh; background: url(../imgs/hd-bg2.png) no-repeat left top; background-size: cover; margin-left: 0; padding-top: 200px; visibility: hidden; }
     ul#menu li { float: none; width: 100%; height: 100px; }
     ul#menu li a { font-size: 34px; font-weight: 500; line-height: 120px; }
     ul#menu.open { padding-top: 180px; visibility: visible; transition: all 0.2s ease-in; overflow-y: scroll; }
@@ -132,7 +132,7 @@ ul#menu li::before { display: none; }
     /*메뉴바 배경*/
     .hd-bg.on { opacity: 1; }
     /* 메뉴 */
-    ul#menu { left: 0; top: 0; width: 100vw; height: 100vh; background: url(../imgs/hd-bg.jpg) no-repeat left top; background-size: cover; margin-left: 0; padding-top: 120px; visibility: hidden; }
+    ul#menu { left: 0; top: 0; width: 100vw; height: 100vh; background: url(../imgs/hd-bg2.png) no-repeat left top; background-size: cover; margin-left: 0; padding-top: 120px; visibility: hidden; }
     ul#menu li { float: none; width: 100%; height: 70px; }
     ul#menu li a { font-size: 24px; font-weight: 500; line-height: 70px; }
     ul#menu.open { padding-top: 100px; visibility: visible; transition: all 0.2s ease-in; overflow-y: scroll; }
@@ -197,8 +197,12 @@ ul#th-grid li .th-txt>p {
 
 /*PDF 버튼*/
 .th-pdf {
-    position: absolute; right: 0; bottom: 0; width: 150px; height: 35px; background: #4366af; border-radius: 10px;
+    position: absolute; right: 0; bottom: 0; width: 150px; height: 35px; border-radius: 10px;
     font: 15px 'Montserrat'; color: #fff; text-align: center; line-height: 35px;
+    background: -webkit-gradient(linear, left top, right bottom, from(#0057b7), to(#3c97dc));
+    background: -moz-gradient(linear, left top, right bottom, from(#0057b7), to(#3c97dc));
+    background: -ms-gradient(linear, left top, right bottom, from(#0057b7), to(#3c97dc));
+    background: -o-gradient(linear, left top, right bottom, from(#0057b7), to(#3c97dc));
 }
 @media screen and (min-width:769px) and (max-width:1350px) {
     ul#th-grid { width: 760px; height: 495px; margin-left: -380px; }
@@ -270,8 +274,8 @@ ul#th-grid li .th-txt>p {
 
 /* 연혁 */
 table { margin: 0 auto; }
-.ab-year { position: relative; color: #4366af; font: 600 35px 'Montserrat'; padding-top: 100px; }
-.ab-dot { position: absolute; left: 50%; top: 90px; margin-left: -5px; width: 10px; height: 10px; background: #4366af; border-radius: 100%; }
+.ab-year { position: relative; color: #0057b7; font: 600 35px 'Montserrat'; padding-top: 100px; }
+.ab-dot { position: absolute; left: 50%; top: 90px; margin-left: -5px; width: 10px; height: 10px; background: #0057b7; border-radius: 100%; }
 .ab-line { position: absolute; left: 50%; width: 1px; height: 230px; background: #aaa; }
 .ab-mon { font: 600 22px 'Montserrat'; padding: 5px 15px 5px 30px; color: #000; }
 .ab-info { font: 18px 'Noto Sans KR'; color: #666; }
@@ -298,13 +302,12 @@ table { margin: 0 auto; }
 }
 
 
-
 /*============================== TEAM ==============================*/
 #team { width: 100vw; }
 /*팀 배경*/
 .tm-bg {
     position: relative; width: 100vw; height: 730px; overflow: hidden;
-    background: -webkit-gradient(linear, left top, right bottom, from(#4366af), to(#e02277));
+    background: -webkit-linear-gradient(90deg, #0057b7, #509fdc);
     background: -moz-gradient(linear, left top, right bottom, from(#4366af), to(#e02277));
     background: -ms-gradient(linear, left top, right bottom, from(#4366af), to(#e02277));
     background: -o-gradient(linear, left top, right bottom, from(#4366af), to(#e02277));
@@ -352,7 +355,7 @@ table { margin: 0 auto; }
     .tm-item:nth-child(1) .mb-name, .tm-item:nth-child(2) .mb-name { width: 180px; margin-left: -90px; }
 
     /*팀원 경력*/
-    .mb-info { width: 280px; height: 9.2em; left: 60px; font-size: 14px; }
+    .mb-info { width: 280px; height: 8.8em; left: 60px; font-size: 14px; }
     .tm-item:nth-child(3) .mb-info, .tm-item:nth-child(4) .mb-info { left: 35px; }
 }
 @media screen and (min-width:481px) and (max-width:768px) {
@@ -371,7 +374,7 @@ table { margin: 0 auto; }
     .tm-item:nth-child(1) .mb-name, .tm-item:nth-child(2) .mb-name { width: 170px; margin-left: -85px; }
 
     /*팀원 경력*/
-    .mb-info { width: 260px; height: 9.2em; left: 40px; font-size: 13px; }
+    .mb-info { width: 260px; height: 9em; left: 40px; font-size: 13px; }
     .tm-item:nth-child(3) .mb-info, .tm-item:nth-child(4) .mb-info { left: 25px; }
 }
 @media screen and (max-width:480px) {
@@ -390,10 +393,9 @@ table { margin: 0 auto; }
     .tm-item:nth-child(1) .mb-name, .tm-item:nth-child(2) .mb-name { width: 150px; margin-left: -75px; }
 
     /*팀원 경력*/
-    .mb-info { width: 200px; height: 9.4em; left: 30px; font-size: 10px; }
+    .mb-info { width: 200px; height: 9.3em; left: 30px; font-size: 10px; }
     .tm-item:nth-child(3) .mb-info, .tm-item:nth-child(4) .mb-info { left: 15px; }
 }
-
 
 
 
@@ -418,10 +420,10 @@ ul#md-grid li:nth-child(2n) .md-title { text-align: right; }
 /*자세히 보기*/
 .more {
     position: absolute; width: 150px; height: 40px;
-    background: -webkit-gradient(linear, left top, right bottom, from(#b32a7e), to(#5c56a3));
-    background: -moz-gradient(linear, left top, right bottom, from(#b32a7e), to(#5c56a3));
-    background: -ms-gradient(linear, left top, right bottom, from(#b32a7e), to(#5c56a3));
-    background: -o-gradient(linear, left top, right bottom, from(#b32a7e), to(#5c56a3));
+    background: -webkit-gradient(linear, left top, right bottom, from(#0057b7), to(#3c97dc));
+    background: -moz-gradient(linear, left top, right bottom, from(#0057b7), to(#3c97dc));
+    background: -ms-gradient(linear, left top, right bottom, from(#0057b7), to(#3c97dc));
+    background: -o-gradient(linear, left top, right bottom, from(#0057b7), to(#3c97dc));
     color: #fff; font: 16px 'Noto Sans KR'; text-align: center; line-height: 40px; border-radius: 10px; box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
 }
 ul#md-grid li:nth-child(2n+1) .more { left: 0; }
@@ -451,7 +453,7 @@ ul#md-grid li:nth-child(2n) .more { right: 0; }
 footer { position: relative; left: 0; bottom: 0; width: 100vw; height: 700px; overflow: hidden; }
 
 /*푸터 배경*/
-#ft-wrap { position: absolute; width: 100%; height: 100%; background: url(../imgs/ft-bg.jpg) no-repeat center center; background-size: cover; }
+#ft-wrap { position: absolute; width: 100%; height: 100%; background: url(../imgs/hd-bg2.png) no-repeat center top; background-size: cover; }
 .ft-shape { position: absolute; left: 50%; top: -5700px; width: 6000px; height: 6000px; margin-left: -3000px; background: #f1f1f1; border-radius: 6000px; }
 .ft-con { position: absolute; left: 50%; bottom: 13%; width: 900px; height: 170px; margin-left: -450px; }
 
