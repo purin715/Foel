@@ -307,7 +307,7 @@ table { margin: 0 auto; }
 /*팀 배경*/
 .tm-bg {
     position: relative; width: 100vw; height: 730px; overflow: hidden;
-    background: -webkit-linear-gradient(90deg, #0057b7, #509fdc);
+    background: -webkit-linear-gradient(90deg, #0057b7, #9dd7fe);
     background: -moz-gradient(linear, left top, right bottom, from(#4366af), to(#e02277));
     background: -ms-gradient(linear, left top, right bottom, from(#4366af), to(#e02277));
     background: -o-gradient(linear, left top, right bottom, from(#4366af), to(#e02277));
