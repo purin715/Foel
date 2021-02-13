@@ -8,19 +8,19 @@ $(document).ready(function() {
         $(this).addClass('on');
     });
 
-    // // 첫 페이지 언어 : 영어로 설정
-    // $('.kor').hide();
-    //
-    // // 언어 전환
-    // $('ul#lang li a').removeAttr("href");
-    // $('ul#lang li:first-child').click(function() {
-    //   $('.kor').css({'display':'block'});
-    //   $('.eng').css({'display':'none'});
-    // });
-    // $('ul#lang li:last-child').click(function() {
-    //   $('.kor').css({'display':'none'});
-    //   $('.eng').css({'display':'block'});
-    // });
+    // 첫 페이지 언어 : 영어로 설정
+    $('.kor').hide();
+
+    // 언어 전환
+    $('ul#lang li a').removeAttr("href");
+    $('ul#lang li:first-child').click(function() {
+      $('.kor').css({'display':'block'});
+      $('.eng').css({'display':'none'});
+    });
+    $('ul#lang li:last-child').click(function() {
+      $('.kor').css({'display':'none'});
+      $('.eng').css({'display':'block'});
+    });
 
     // 스크롤 시 메뉴바 배경 생성, lang 컬러 변경
     var ht = $(window).height();
@@ -80,7 +80,6 @@ $(document).ready(function() {
             delay: 3000
         }
     });
-
 
     // 연혁 클릭했을 때
     $('.ab-item, .ab-click').click(function() {
